@@ -73,7 +73,12 @@ namespace StatePattern.Enemy
 
             return enemy;
         }
-        public void AddEnemy(EnemyController enemy) => activeEnemies.Add(enemy);
+
+        public void AddEnemy(EnemyController enemy)
+        {
+            activeEnemies.Add(enemy);
+            spawnedEnemies++;
+        }
 
         public void EnemyDied(EnemyController deadEnemy)
         {
