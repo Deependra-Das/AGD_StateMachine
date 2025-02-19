@@ -26,6 +26,9 @@ namespace StatePattern.UI
             levelSelectionController = new LevelSelectionUIController(levelSelectionView, levelButtonPrefab);
             levelEndController = new LevelEndUIController(levelEndView);
             gameplayController = new GameplayUIController(gameplayView);
+        }
+        private void Start()
+        {
             SubscribeToEvents();
         }
 
